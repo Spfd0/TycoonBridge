@@ -1,0 +1,42 @@
+package com.tycoonbridge.utils
+
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertFalse
+import kotlin.test.assertTrue
+
+class ChatFormatterSmokeTest {
+    @Test
+    fun guildPatternMatchesAndKeepsGroupIndexes() {
+        val match = ChatFormatter.GUILD_PATTERN.matcher("Guild > [MVP+] Gygi4 §3[OFFICER]: hello world")
+        assertTrue(match.matches())
+        assertEquals("[MVP+] ", match.group(1))
+        assertEquals("Gygi4", match.group(2))
+        assertEquals("OFFICER", match.group(3))
+        assertEquals("hello world", match.group(4))
+    }
+
+    @Test
+    fun officerPatternMatchesAndKeepsGroupIndexes() {
+        val match = ChatFormatter.OFFICER_PATTERN.matcher("Officer > [MVP++] Gygi4 §3[LEADER]: announce")
+        assertTrue(match.matches())
+        assertEquals("[MVP++] ", match.group(1))
+        assertEquals("Gygi4", match.group(2))
+        assertEquals("LEADER", match.group(3))
+        assertEquals("announce", match.group(4))
+    }
+
+    @Test
+    fun bridgePatternSplitsNameAndMessage() {
+        val match = ChatFormatter.BRIDGE_PATTERN.matcher("User: hello from bridge")
+        assertTrue(match.find())
+        assertEquals("User:", match.group(1))
+        assertEquals("hello from bridge", match.group(2))
+    }
+
+    @Test
+    fun invalidInputDoesNotMatchGuildPattern() {
+        val match = ChatFormatter.GUILD_PATTERN.matcher("Random line without chat format")
+        assertFalse(match.matches())
+    }
+}
