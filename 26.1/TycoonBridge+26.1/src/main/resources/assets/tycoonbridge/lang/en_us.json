@@ -1,0 +1,14 @@
+{
+  "title.tycoonbridge.config": "Tycoon Bridge",
+  "category.tycoonbridge.general": "Bridge Bot",
+  "entry.tycoonbridge.enabled": "Enabled",
+  "tooltip.tycoonbridge.bridgeEnabled": "Enable bot message formatting",
+  "entry.tycoonbridge.botNames": "Bot Names",
+  "tooltip.tycoonbridge.botNames": "List of Bot (separate with spaces)",
+  "entry.tycoonbridge.guildBot": "Guild Bot Messages",
+  "entry.tycoonbridge.officerBot": "Officer Bot Messages",
+  "entry.tycoonbridge.prefix": "Prefix",
+  "entry.tycoonbridge.prefixColor": "Prefix Color",
+  "entry.tycoonbridge.nameColor": "Username Color",
+  "entry.tycoonbridge.messageColor": "Message Color"
+}
