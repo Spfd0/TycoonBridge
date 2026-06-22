@@ -4,6 +4,8 @@ A client-side Fabric mod that provides fully customizable formatting for bridge 
 
 TycoonBridge intercepts incoming **Guild** and **Officer** chat messages sent by your bridge bot and reformats them with custom prefixes, colors, and styling — making bridged messages clean and easy to read at a glance.
 
+<img width="1920" height="1017" alt="2026-06-22_14 16 08" src="https://github.com/user-attachments/assets/a3d7b8a2-15fa-4728-9bee-ec09ab698087" />
+
 ---
 
 ## Supported Versions
