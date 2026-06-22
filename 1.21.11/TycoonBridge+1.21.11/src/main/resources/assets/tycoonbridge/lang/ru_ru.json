@@ -1,0 +1,14 @@
+{
+  "title.tycoonbridge.config": "Tycoon Bridge",
+  "category.tycoonbridge.general": "Bridge Bot",
+  "entry.tycoonbridge.enabled": "Включено",
+  "tooltip.tycoonbridge.bridgeEnabled": "Включить форматирование сообщений ботов",
+  "entry.tycoonbridge.botNames": "Имена Ботов",
+  "tooltip.tycoonbridge.botNames": "Список имён ботов (Разделить пробелами)",
+  "entry.tycoonbridge.guildBot": "Сообщения Ботов Гильдии",
+  "entry.tycoonbridge.officerBot": "Офицерские Сообщения Ботов",
+  "entry.tycoonbridge.prefix": "Префикс",
+  "entry.tycoonbridge.prefixColor": "Цвет Префикса",
+  "entry.tycoonbridge.nameColor": "Цвет Никнейма",
+  "entry.tycoonbridge.messageColor": "Цвет Сообщения"
+}

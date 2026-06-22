@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "tycoonbridge",
+  "version": "${version}",
+  "name": "TycoonBridge",
+  "description": "Provides customizable formatting for bridge bot messages.",
+  "authors": [
+    "FanerXp"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/chatbridge-ws",
+    "sources": "https://github.com/unknown-salt/chatbridge",
+    "issues": "https://github.com/unknown-salt/chatbridge/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/tycoonbridge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "value": "com.tycoonbridge.TycoonBridge",
+        "adapter": "kotlin"
+      }
+    ],
+    "modmenu": [
+      "com.tycoonbridge.config.TycoonBridgeModMenu"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/chatbridge-ws"
+      }
+    }
+  }
+}
