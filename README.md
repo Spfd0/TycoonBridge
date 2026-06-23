@@ -12,7 +12,7 @@ TycoonBridge intercepts incoming **Guild** and **Officer** chat messages sent by
 
 | Minecraft Version | Folder              |
 | ----------------- | ------------------- |
-| 1.21.11           | `1.21.11/`          |
+| 1.21.11           | [`1.21.11/`](https://github.com/Spfd0/TycoonBridge/tree/main/1.21.11)          |
 | 26.1              | `26.1/`             |
 | 26.1.1            | `26.1.1/`           |
 | 26.1.2            | `26.1.2/`           |
